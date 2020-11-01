@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MyOrderListFragment">
+
+    <ImageView
+        android:id="@+id/imgNavigation"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+    </ImageView>
+
+    <ImageView
+    android:id="@+id/imgBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:background="@drawable/ic_baseline_arrow_back_24"
+    app:layout_constraintBottom_toBottomOf="@id/imgNavigation"
+    app:layout_constraintLeft_toLeftOf="@id/imgNavigation"
+    app:layout_constraintTop_toTopOf="@id/imgNavigation">
+
+</ImageView>
+
+    <TextView
+        android:id="@+id/navigationBarOpen"
+        app:layout_constraintTop_toTopOf="@+id/imgNavigation"
+        app:layout_constraintBottom_toBottomOf="@+id/imgNavigation"
+        android:text="@string/my_orders"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        tools:listitem="@layout/order_list"
+        app:layout_constraintTop_toBottomOf="@id/imgNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0sp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

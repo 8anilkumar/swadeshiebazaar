@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70E6E2E2"
+    tools:context=".AddressListActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imgAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/imgAppBar"
+        app:layout_constraintBottom_toBottomOf="@id/imgAppBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/selectshippingadd"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/btnShipping"
+        app:layout_constraintTop_toBottomOf="@id/imgAppBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Open Map"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+    <Button
+        android:id="@+id/btAddNewwAddress"
+        app:layout_constraintBottom_toBottomOf="@id/btnShipping"
+        app:layout_constraintTop_toTopOf="@id/btnShipping"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/white"
+        android:text="@string/addnewaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp">
+
+    </Button>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nestedRec"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAddNewwAddress">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ProgressBar
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/progress_circular"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

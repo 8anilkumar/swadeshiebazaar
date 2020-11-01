@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">swadeshiebazaar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in_into_swadeshie_bazaar">Sign in into Swadeshi E Bazaar</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="your_name">Your Name</string>
+    <string name="refer_code_optional">Refer Code (Optional)</string>
+    <string name="by_signing_up_you_agree_to_our">By signing up,you agree to our</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="available_in_stock">Available (In Stock)</string>
+    <string name="inr_price">INR 200</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="otp_description">We have sent you access code Via SMS for mobile number verification</string>
+    <string name="don_t_receive_the_otp">Don\'t Receive the OTP?</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="call_us">Call us</string>
+    <string name="mail_us">Mail us</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_invoice">My Invoice</string>
+    <string name="leagal_and_about">Leagal and about</string>
+    <string name="your_order_history">Your Order History</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="wallet_history">Wallet History</string>
+    <string name="qty">Qty</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="shipping">Shipping Address</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="atrhislocation">Deliver at this location</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="addnewaddress">Add New Address</string>
+    <string name="my_cart">My Cart</string>
+    <string name="proceed_to_pay">Proceed To Pay</string>
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="delivery_charges">Delivery Charges</string>
+
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="wish_list">Wish List</string>
+    <string name="home">Home</string>
+    <string name="selectshippingadd">Select Shipping Address</string>
+    <string name="comfirm_order">Comfirm Order</string>
+    <string name="preferred_delivery_slot">Preferred Delivery Slot</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="cash_upi_on_delivery_preferred">Card/ UPI on Delivery (Preferred)</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="order_items">Order Items</string>
+    <string name="total_payabel">Total Payabel</string>
+    <string name="contact">contact</string>
+    <string name="guest_login">Guest Login</string>
+    <string name="grocery_staples"><![CDATA[Grocery & Staples]]></string>
+    <string name="verify">Verify</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="see_all">See All</string>
+    <string name="_8853108383">8853108383</string>
+    <string name="services">Services</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybride Map</string>
+    <string name="setelight_map">Setelight Map</string>
+    <string name="terrain_map">Terrain Map</string>
+
+    <string name="attention">Attention!</string>
+    <string name="do_you_want_to_exit">Do you really want to exit?</string>
+    <string name="yes">YES</string>
+    <string name="no">No</string>
+    <string name="title_activity_get_location">GetLocation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="set_your_location">Set Your location</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

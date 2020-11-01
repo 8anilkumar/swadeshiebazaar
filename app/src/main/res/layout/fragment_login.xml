@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".auth.auth_fragment.LoginFragment">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="@dimen/_150sdp">
+
+    </ImageView>
+
+
+    <View
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1sp">
+
+    </View>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_marginTop="@dimen/_7sdp"
+      app:layout_constraintTop_toBottomOf="@id/imgLogo"
+      android:layout_height="@dimen/_35sdp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tabs"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_35sdp"
+
+              app:layout_constraintTop_toTopOf="parent"
+              app:tabSelectedTextColor="@color/colorPrimary">
+
+
+
+              <com.google.android.material.tabs.TabItem
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/sign_in" />
+
+
+              <com.google.android.material.tabs.TabItem
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/sign_up" />
+
+          </com.google.android.material.tabs.TabLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+
+
+    <View
+        app:layout_constraintTop_toTopOf="@id/cardView"
+        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_width="1sp"
+        android:layout_height="0sp">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/fragmentDAta"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
